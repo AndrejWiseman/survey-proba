@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upitnik za istrazivanje</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="" id="contactForm">
+            <div class="alert">Hvala Vam sto ste ucestvovali u istrazivanju.</div>
+
+<!--            <div class="inputBox">-->
+<!--                <input type="text" id="name" placeholder="Your name...." />-->
+<!--            </div>-->
+
+<!--            <div class="inputBox">-->
+<!--                <input type="email" id="emailid" placeholder="Your Email....." />-->
+<!--            </div>-->
+
+<!--            <div class="inputBox">-->
+<!--                <textarea id="msgContent" cols="30" rows="10" placeholder="Message"></textarea>-->
+<!--            </div>-->
+
+            <div class="inputBox container naslovni-cont">
+                <p>Dobar dan. </p>
+
+            </div>
+
+            <div class="inputBox">
+                <p>Ja sam: </p>
+                <input type="radio" id="musko" name="pol" value="musko">
+                <label for="musko">Muško</label><br>
+
+                <input type="radio" id="zensko" name="pol" value="zensko">
+                <label for="zensko">Žensko</label>
+            </div>
+
+            <div class="inputBox">
+                <p>Dobna starost: </p>
+                <input type="radio" id="18-30" name="starost" value="18-30">
+                <label for="18-30">18-30</label><br>
+
+                <input type="radio" id="31-50" name="starost" value="31-50">
+                <label for="31-50">31-50</label> <br>
+
+                <input type="radio" id="50+" name="starost" value="50+">
+                <label for="50+">50+</label>
+            </div>
+
+            <div class="inputBox">
+                <p>Volim: </p>
+                <input type="radio" id="muskarce" name="volim-pol" value="muskarce">
+                <label for="muskarce">Muškarce</label><br>
+
+                <input type="radio" id="zene" name="volim-pol" value="zensko">
+                <label for="zene">Žene</label> <br>
+
+                <input type="radio" id="oboje" name="volim-pol" value="oboje">
+                <label for="oboje">I jedne i druge</label>
+            </div>
+
+            <div class="inputBox">
+                <p>Trenutno sam u vezi: </p>
+                <input type="radio" id="veza-jesam" name="veza" value="jesam">
+                <label for="veza-jesam">Jesam</label><br>
+
+                <input type="radio" id="veza-nisam" name="veza" value="nisam">
+                <label for="veza-nisam">Nisam</label><br>
+
+                <input type="radio" id="veza-mozda" name="veza" value="mozda">
+                <label for="veza-mozda">I jesam i nisam</label><br>
+            </div>
+
+            <div class="inputBox">
+                <p>Imalo/la sam partnera: </p>
+                <input type="radio" id="0-2" name="br_partnera" value="0-2">
+                <label for="0-2">0-2</label><br>
+
+                <input type="radio" id="3-6" name="br_partnera" value="3-6">
+                <label for="3-6">3-6</label> <br>
+
+                <input type="radio" id="5+" name="br_partnera" value="5+">
+                <label for="5+">5+</label>
+            </div>
+
+            <div class="inputBox">
+                <p>Idealan broj seksualnih odnosa sedmično: </p>
+                <input type="radio" id="1-2" name="sex_sedmicno" value="1-2">
+                <label for="1-2">1-2</label><br>
+
+                <input type="radio" id="3-5" name="sex_sedmicno" value="3-5">
+                <label for="3-5">3-5</label><br>
+
+                <input type="radio" id="6+" name="sex_sedmicno" value="6+">
+                <label for="6+">6+</label><br>
+            </div>
+
+            <div class="inputBox">
+                <p>Idealno trajanje seksualnog odnosa: </p>
+                <input type="radio" id="15" name="sex_trajanje" value="15">
+                <label for="15"> <15 minuta</label><br>
+
+                <input type="radio" id="15-30" name="sex_trajanje" value="15-30">
+                <label for="15-30">15-30 minuta</label><br>
+
+                <input type="radio" id="30+" name="sex_trajanje" value="30+">
+                <label for="30+">30+ minuta</label><br>
+            </div>
+
+            <div class="inputBox">
+                <p>Da li se nekada imali seksualne odnose sa istim polom: </p>
+                <input type="radio" id="ispiPolDa" name="sex_istiPol" value="Da">
+                <label for="ispiPolDa">Da</label><br>
+
+                <input type="radio" id="ispiPolNe" name="sex_istiPol" value="Ne">
+                <label for="ispiPolNe">Ne</label><br>
+            </div>
+
+            <div class="inputBox">
+                <p>Da li se nekada zamišljali da imate seksualne odnose sa istim polom: </p>
+                <input type="radio" id="ispiPolDaZamisljao" name="sex_istiPolZamisljali" value="Da">
+                <label for="ispiPolDaZamisljao">Da</label><br>
+
+                <input type="radio" id="ispiPolNeZamisljao" name="sex_istiPolZamisljali" value="Ne">
+                <label for="ispiPolNeZamisljao">Ne</label><br>
+            </div>
+
+            <div class="inputBox">
+                <p>Da li ste nekada bili sa dva ili više partnera istovremeno: </p>
+                <input type="radio" id="visePartneraDa" name="vise_partnera" value="da">
+                <label for="visePartneraDa">Da</label><br>
+
+                <input type="radio" id="visePartneraNe" name="vise_partnera" value="Ne">
+                <label for="visePartneraNe">Ne</label><br>
+            </div>
+
+            <div class="inputBox">
+                <p>Omiljena poza u seksu: </p>
+                <input type="radio" id="klasicna" name="sex_poza" value="klasicno">
+                <label for="klasicna">Misionarska (klasična)</label><br>
+
+                <input type="radio" id="doggy" name="sex_poza" value="doggy">
+                <label for="doggy">Doggy</label><br>
+
+                <input type="radio" id="cowgirl" name="sex_poza" value="cowgirl">
+                <label for="cowgirl">Cowgirl (djevojka na muškarcu okrenuta prema njemu)</label><br>
+
+                <input type="radio" id="r_cowgirl" name="sex_poza" value="r_cowgirl">
+                <label for="r_cowgirl">Revers Cowgirl (djevojka na muškarcu okrenuta leđima)</label><br>
+
+                <input type="radio" id="ostalo" name="sex_poza" value="ostalo">
+                <label for="ostalo">Ostalo</label><br>
+            </div>
+
+            <div class="inputBox">
+                <p>Da li ste nekada masturbirali: </p>
+                <input type="radio" id="masturbiraliDa" name="da_li_ste_masturbirali" value="da">
+                <label for="masturbiraliDa">Da</label><br>
+
+                <input type="radio" id="masturbiraliNe" name="da_li_ste_masturbirali" value="ne">
+                <label for="masturbiraliNe">Ne</label><br>
+            </div>
+
+            <div class="inputBox">
+                <p>Kada ste zadnji put masturbirali: </p>
+                <input type="radio" id="masturbiraliNikada" name="masturbirali_vreme" value="nikada">
+                <label for="masturbiraliNikada">Nisam nikada</label><br>
+
+                <input type="radio" id="masturbirali7dana" name="masturbirali_vreme" value="7dana">
+                <label for="masturbirali7dana">U zadnjih sedam dana</label><br>
+
+                <input type="radio" id="masturbiraliMesecDana" name="masturbirali_vreme" value="mesec">
+                <label for="masturbiraliMesecDana">U zadnjih mjesec dana</label><br>
+
+                <input type="radio" id="masturbiraliViseDana" name="masturbirali_vreme" value="vise">
+                <label for="masturbiraliViseDana">Više od mjesec dana</label><br>
+            </div>
+
+            <div class="inputBox">
+                <p>Da li ste nekada oralno zadovoljavali partnera: </p>
+                <input type="radio" id="oralnoDa" name="oralno_zadovoljavali" value="da">
+                <label for="oralnoDa">Da</label><br>
+
+                <input type="radio" id="oralnoNe" name="oralno_zadovoljavali" value="ne">
+                <label for="oralnoNe">Ne</label><br>
+            </div>
+
+            <div class="inputBox">
+                <p>Da li je nekada partner oralno zadovoljavao vas: </p>
+                <input type="radio" id="oralnoVasDa" name="oralno_vas" value="da">
+                <label for="oralnoVasDa">Da</label><br>
+
+                <input type="radio" id="oralnoVasNe" name="oralno_vas" value="ne">
+                <label for="oralnoVasNe">Ne</label><br>
+            </div>
+
+            <div class="inputBox">
+                <p>Da li u toku odnosa, redovno, oralno stimulišete partnera: </p>
+                <input type="radio" id="oralnoRedovnoDa" name="oralno_redovno" value="da">
+                <label for="oralnoRedovnoDa">Da</label><br>
+
+                <input type="radio" id="oralnoRedovnoNe" name="oralno_redovno" value="ne">
+                <label for="oralnoRedovnoNe">Ne</label><br>
+            </div>
+
+            <div class="inputBox">
+                <p>Da li ste nekada probali analni seks:</p>
+                <input type="radio" id="analniDa" name="analni" value="da">
+                <label for="analniDa">Da</label><br>
+
+                <input type="radio" id="analniNe" name="analni" value="ne">
+                <label for="analniNe">Na</label><br>
+            </div>
+
+            <div class="inputBox">
+                <p>Da li se nekada probali (okusili) partnerov ejakulant:</p>
+                <input type="radio" id="spermaDa" name="sperma" value="da">
+                <label for="spermaDa">Da</label><br>
+
+                <input type="radio" id="spermaNe" name="sperma" value="ne">
+                <label for="spermaNe">Ne</label><br>
+            </div>
+
+            <div class="inputBox">
+                <p>Da li ste/vam je nekada partner ejakulirao po stomaku:</p>
+                <input type="radio" id="spermaStomakDa" name="spermaStomak" value="da">
+                <label for="spermaStomakDa">Da</label><br>
+
+                <input type="radio" id="spermaStomakNe" name="spermaStomak" value="Ne">
+                <label for="spermaStomakNe">Ne</label><br>
+            </div>
+
+            <div class="inputBox">
+                <p>Da li ste/vam je nekada partner ejakulirao po grudima:</p>
+                <input type="radio" id="spermaGrudiDa" name="spermaGrudi" value="da">
+                <label for="spermaGrudiDa">Da</label><br>
+
+                <input type="radio" id="spermaGrudiNe" name="spermaGrudi" value="ne">
+                <label for="spermaGrudiNe">Ne</label><br>
+            </div>
+
+            <div class="inputBox">
+                <p>Da li ste/vam je nekada partner ejakulirao po zadnjici:</p>
+                <input type="radio" id="spermaGuzaDa" name="spermaGuza" value="da">
+                <label for="spermaGuzaDa">Da</label><br>
+
+                <input type="radio" id="spermaGuzaNe" name="spermaGuza" value="ne">
+                <label for="spermaGuzaNe">Ne</label><br>
+            </div>
+
+            <div class="inputBox">
+                <p>Da li ste/vam je nekada partner ejakulirao po licu:</p>
+                <input type="radio" id="spermaLiceDa" name="spermaLice" value="da">
+                <label for="spermaLiceDa">Da</label><br>
+
+                <input type="radio" id="spermaLiceNe" name="spermaLice" value="ne">
+                <label for="spermaLiceNe">Ne</label><br>
+            </div>
+
+            <div class="inputBox">
+                <p>Da li ste nekada progutali partnerov ejakulant:</p>
+                <input type="radio" id="spermaGutanjeDa" name="spermaGutanje" value="da">
+                <label for="spermaGutanjeDa">Da</label><br>
+
+                <input type="radio" id="spermaGutanjeNe" name="spermaGutanje" value="ne">
+                <label for="spermaGutanjeNe">Ne</label><br>
+            </div>
+
+
+
+
+
+
+
+
+
+
+<!--===========================================================-->
+            <div class="inputBox">
+                <button type="submit">Anonimno pošalji podatke</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./mail.js"></script>
+</body>
+
+</html>
