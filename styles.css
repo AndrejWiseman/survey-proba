@@ -10,6 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .container{
@@ -24,15 +25,23 @@ body{
     flex-direction: column;
 }
 
-.naslovni-cont {
+.naslovni-cont p {
     min-height: 10vh;
     padding: 0;
     margin: 0;
-     text-align: left;
+    text-align: left;
 }
 
-p.nasl-text {
+.test {
+    text-align: left;
 
+}
+
+.naslovni-tekst {
+    text-align: left;
+    /*display: flex;*/
+    /*justify-content: flex-start;*/
+    /*position: absolute;*/
 
 }
 
