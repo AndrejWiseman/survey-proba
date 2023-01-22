@@ -25,7 +25,15 @@ body{
 }
 
 .naslovni-cont {
-    min-height: 20vh;
+    min-height: 10vh;
+    padding: 0;
+    margin: 0;
+     text-align: left;
+}
+
+p.nasl-text {
+
+
 }
 
 .container form{
