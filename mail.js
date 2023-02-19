@@ -50,6 +50,7 @@ function submitForm(e) {
   var spermaLice = document.querySelector('input[name="spermaLice"]:checked').value;
   var spermaGutanje = document.querySelector('input[name="spermaGutanje"]:checked').value;
   var spermaGuza = document.querySelector('input[name="spermaGuza"]:checked').value;
+  var uUsta = document.querySelector('input[name="uUsta"]:checked').value;
 
   var klasicniOcena = document.querySelector('input[name="klasicniOcena"]:checked').value;
   var doggyOcena = document.querySelector('input[name="doggyOcena"]:checked').value;
@@ -58,7 +59,7 @@ function submitForm(e) {
 
 
   // saveMessages(name, emailid, msgContent, pol);
-  saveMessages(pol, starost, volim_pol, veza, br_partnera, sex_sedmicno, sex_trajanje, sex_istiPol, sex_istiPolZamisljali, vise_partnera, sex_poza, da_li_ste_masturbirali, masturbirali_vreme, oralno_zadovoljavali, oralno_vas, oralno_redovno, analni, sperma, spermaStomak, spermaGrudi, spermaLice, spermaGutanje, spermaGuza, klasicniOcena, doggyOcena, oralniOcena, analniOcena );
+  saveMessages(pol, starost, volim_pol, veza, br_partnera, sex_sedmicno, sex_trajanje, sex_istiPol, sex_istiPolZamisljali, vise_partnera, sex_poza, da_li_ste_masturbirali, masturbirali_vreme, oralno_zadovoljavali, oralno_vas, oralno_redovno, analni, sperma, spermaStomak, spermaGrudi, spermaLice, spermaGutanje, spermaGuza, klasicniOcena, doggyOcena, oralniOcena, analniOcena, uUsta );
 
   //   enable alert
   document.querySelector(".alert").style.display = "block";
@@ -72,7 +73,7 @@ function submitForm(e) {
   document.getElementById("contactForm").reset();
 }
 
-const saveMessages = (pol, starost, volim_pol, veza, br_partnera, sex_sedmicno, sex_trajanje, sex_istiPol, sex_istiPolZamisljali, vise_partnera, sex_poza, da_li_ste_masturbirali, masturbirali_vreme, oralno_zadovoljavali, oralno_vas, oralno_redovno, analni, sperma, spermaStomak, spermaGrudi, spermaLice, spermaGutanje, spermaGuza, klasicniOcena, doggyOcena, oralniOcena, analniOcena) => {
+const saveMessages = (pol, starost, volim_pol, veza, br_partnera, sex_sedmicno, sex_trajanje, sex_istiPol, sex_istiPolZamisljali, vise_partnera, sex_poza, da_li_ste_masturbirali, masturbirali_vreme, oralno_zadovoljavali, oralno_vas, oralno_redovno, analni, sperma, spermaStomak, spermaGrudi, spermaLice, spermaGutanje, spermaGuza, klasicniOcena, doggyOcena, oralniOcena, analniOcena, uUsta ) => {
   var newContactForm = contactFormDB.push();
 
   newContactForm.set({
@@ -99,6 +100,7 @@ const saveMessages = (pol, starost, volim_pol, veza, br_partnera, sex_sedmicno, 
       spermaLice: spermaLice,
       spermaGutanje: spermaGutanje,
       spermaGuza: spermaGuza,
+      uUsta: uUsta,
     klasicniOcena: klasicniOcena,
     doggyOcena: doggyOcena,
     oralniOcena: oralniOcena,
